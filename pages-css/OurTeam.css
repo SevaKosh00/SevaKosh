@@ -1,0 +1,106 @@
+/* CSS for Our Team page */
+body {
+    margin: 0;
+    margin-top: 74px; /* Ensure the header does not overlap the content */
+    font-family: Arial, sans-serif;
+    background-color: lavender;
+}
+
+.team-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    padding-bottom: 1rem;
+    border: 2px solid #FFA500; /* Orange border */
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.member-info h3 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.member-info p {
+    margin: 0.5rem auto;
+    color: white;
+    background-color: rgba(101, 84, 255, 0.7); /* #6554ff with transparency */
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 80%;
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 245, 220, 0.9); /* Light orange-white */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.team-member:hover .social-links,
+.team-member:focus-within .social-links,
+.team-member.active .social-links {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.social-links a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}

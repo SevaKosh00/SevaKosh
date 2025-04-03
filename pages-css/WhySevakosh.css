@@ -1,0 +1,166 @@
+/* Styles specific to the Why SevaKosh page */
+/* General Styles */
+
+
+
+/* Fee Section Styles */
+.fee-section {
+  background-color: #f5f7fa;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.fee-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.fee-section h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.fee-section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.fee-section ul {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.fee-section li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.fee-section li::before {
+  content: "•";
+  color: #ff6b35; /* Orange */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.highlight {
+  background-color: #fff5f0; /* Light orange */
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.closing {
+  text-align: center;
+  font-style: italic;
+  color: #5d2d91; /* Purple */
+  margin-top: 1.5rem;
+}
+
+
+/* Final State (Visible) */
+/* Why SevaKosh Page Styles */
+.why-sevakosh {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.why-sevakosh h1 {
+  text-align: center;
+  color: #493cbe; /* Purple */
+  margin-bottom: 2rem;
+}
+
+.why-sevakosh h2 {
+  color: #ff6b35; /* Orange */
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid #ff6b35;
+  padding-bottom: 0.5rem;
+}
+
+.why-sevakosh p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.featured-image {
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid #eee;
+}
+
+.why-sevakosh h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.why-sevakosh h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.solution-section {
+  background-color: #fff5f0; /* Light purple */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.difference-section {
+  background-color: #fff5f0; /* Light orange */
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.join-section {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2.5rem;
+  background-color: #fff5f0; /* Purple */
+  color: #ff6b35;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.join-section h2 {
+  color: #ff6b35;
+  border-bottom: 2px solid #ff6b35; /* Orange */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.join-section p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: 0 auto 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.why-sevakosh p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  margin-bottom: 1.8rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.2px;
+}

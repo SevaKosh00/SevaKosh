@@ -1,0 +1,378 @@
+/* Expanded Menu Styles */
+.expanded-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 400px;
+    background-color: #6554ff;
+    padding: 5px;
+    padding-right: 65px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.expanded-menu.active {
+    max-height: 300px;
+    width: 500px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.expanded-menu ul {
+    list-style: none;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.expanded-menu ul li {
+    padding-left: 20px;
+    padding: 5px;
+    font-size: 150%;
+    margin: 10px 0;
+    border-bottom: 1px solid #9589ff;
+}
+
+.expanded-menu ul li:hover {
+    background-color: #3326ab;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.expanded-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.expanded-menu ul li:hover a {
+    color: #ff7f00;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 80%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: slideInDown 1s ease-in-out;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    animation: slideInUp 1s ease-in-out;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.mission-section h2 {
+    color: #30227d;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mission-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Summary Cards */
+.summaries-section {
+    padding: 3rem 2rem;
+    background-color: white;
+}
+
+.summaries-section h2 {
+    text-align: center;
+    color: #30227d;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.summary-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem;
+    transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.summary-card h3 {
+    color: #ff7f00;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.summary-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.learn-more {
+    color: #6554ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #30227d;
+}
+
+/* Testimonials */
+.testimonials-section {
+    padding: 4rem 2rem;
+    background-color: lavender;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: #30227d;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial cite {
+    font-weight: bold;
+    color: #6554ff;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #6554ff;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff7f00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+    background-color: #ff9500;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .mission-section,
+    .summaries-section,
+    .testimonials-section,
+    .cta-section {
+        padding: 2rem 1rem;
+    }
+
+    .summary-card {
+        margin: 1rem 0;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .expanded-menu {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .expanded-menu.active {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 40vh;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .mission-section h2,
+    .summaries-section h2,
+    .testimonials-section h2,
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .summary-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,384 @@
+/* Statistics Block */
+.statistics-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background-color: lavender;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+  min-width: 150px;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #30227d;
+  margin-bottom: 0.5rem;
+}
+
+.stat-text {
+  font-size: 1.4rem;
+  color: #ff7300;
+}
+
+.stat-title {
+    font-weight: 700;
+    font-size: 3.3rem;
+    color: #ff7f00;
+}
+.stat-plus {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #30227d;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .statistics-block {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .stat-item {
+    min-width: 100%;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
+/* General Styles */
+body {
+    margin: 0;
+    margin-top: 74px; /* Ensure the header does not overlap the content */
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6554ff;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height : 70px;
+    z-index: 1000; /* Ensure the header is above other elements */
+}
+
+.logo img {
+    height: 45px;
+    margin: -10px;
+    margin-bottom: -20px;
+}
+
+.nav-links {
+    white-space: nowrap;
+    padding-right: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links :hover {
+    color: #ff7f00;
+    background-color: #ffffff;
+    border-radius: 5%;
+    box-shadow: #5300c8 2px 2px 2px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+#menu-button {
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 20px; /* Increased padding from 0 */
+    line-height: 0.5;
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu-button:hover {
+    color: #ff7f00;
+    background-color: none;
+    box-shadow: none;
+}
+
+#menu-button.rotate {
+    transform: rotate(180deg) scale(1.3);
+}
+
+/* Expanded Menu Styles */
+.expanded-menu {
+    position: absolute;
+    top: 100%; /* Position below the header */
+    right: 0;
+    width: 400px;
+    background-color: #6554ff;
+    padding: 5px;
+    padding-right: 65px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Initial State (Hidden) */
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Final State (Visible) */
+.expanded-menu.active {
+    max-height: 300px;
+    width: 500px;
+    opacity: 1;
+    transform: translateX(0); /* Reset position */
+}
+
+.expanded-menu ul {
+    list-style: none;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.expanded-menu ul li {
+    padding-left: 20px;
+    padding: 5px;
+    font-size: 150%;
+    margin: 10px 0;
+    border-bottom: 1px solid #9589ff;
+}
+
+.expanded-menu ul li:hover {
+    background-color: #3326ab;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.expanded-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.expanded-menu ul li:hover a {
+    transition: background-color 0.3s ease-in-out;
+    color: #ff7f00;
+}
+
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Tata Section */
+.team-image {
+    padding-left: 20%;
+    padding-right: 25%;
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Quotes Section */
+.quotes-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 50px 20px;
+    background-color: lavender;
+    margin-top: 10%; /* Add spacing below the fixed header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.quote-block {
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 5rem;
+    text-align: center;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth animation */
+    transform: translateY(50px); /* Start off-screen */
+    opacity: 0; /* Start invisible */
+}
+
+
+.quote-block h1 {
+    font-size: 2.9rem;
+    margin-bottom: 10px;
+
+}
+
+.quote-block p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Animation Classes */
+.quote-block.animate {
+    transform: translateY(0); /* Slide into view */
+    opacity: 1; /* Fade in */
+}
+
+/* Media Query for Tablet view */
+@media (max-width: 800px) {
+    .quotes-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quote-block {
+        margin-bottom: 30px; /* Add spacing when blocks stack */
+    }
+}
+
+/* Media Query for Mobile view */
+@media (max-width: 600px) {
+    body {
+        margin-top: 30px; /* Adjust body margin for smaller header */
+    }
+
+    .nav-links {
+        height: 20px;
+        margin-left: -5%;
+    }
+
+    .header {
+        padding: 5px 10px; /* Adjusted padding */
+        white-space: nowrap; /* Restored to prevent wrapping */
+        margin: 0; /* Simplified margin */
+        justify-content: space-between; /* Reverted to push items apart */
+        /* gap: 15px; Removed */
+    }
+
+    .logo img {
+        height: 22px; /* Make logo even smaller for mobile */
+        margin: 0; /* Reset negative margins for smaller logo */
+    }
+
+    #menu-button {
+        padding: 10px; /* Balanced padding */
+        font-size: 18px; /* Slightly larger icon for easier tapping */
+    }
+
+    .about-us {
+        padding: 30px 15px; /* Reduce padding */
+    }
+
+    .about-us h1 {
+        font-size: 2rem; /* Smaller heading */
+    }
+
+    .about-us h2 {
+        font-size: 1.3rem; /* Smaller subheading */
+    }
+
+    .about-us p {
+        font-size: 0.9rem; /* Smaller text */
+    }
+
+    .team-image {
+        width: 90%; /* Make image responsive */
+        padding-left: 5%; /* Adjust padding */
+        padding-right: 5%;
+    }
+
+    .quotes-section {
+        padding: 30px 10px; /* Reduce padding */
+        margin-top: 5%; /* Adjust top margin */
+    }
+
+    .quote-block {
+        width: 80%; /* Make quote blocks flexible */
+        padding: 10px;
+        max-height: 400px;
+        /* padding-bottom: 0.1rem; */
+    
+    }
+
+    .quote-block h1 {
+        font-size: 2rem; /* Smaller quote heading */
+    }
+
+    .quote-block p {
+        font-size: 1.2rem; /* Smaller quote text */
+    }
+
+    .expanded-menu.active {
+        width: 90%; /* Adjust expanded menu width */
+    }
+
+    .expanded-menu ul li {
+        font-size: 1.2rem; /* Adjust menu item font size */
+    }
+
+    .footer {
+        padding: 15px; /* Adjust footer padding */
+    }
+}
