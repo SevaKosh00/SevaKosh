@@ -384,6 +384,9 @@ body {
         font-size: 1.2rem; /* Smaller quote text */
     }
 
+    .expanded-menu {
+      padding-left: 8%;
+    }
     .expanded-menu.active {
         width: 90%; /* Adjust expanded menu width */
     }
