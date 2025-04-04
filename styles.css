@@ -382,3 +382,38 @@ body {
         padding: 15px; /* Adjust footer padding */
     }
 }
+
+
+/* Extra Small Mobile Devices (max-width: 400px) */
+@media (max-width: 400px) {
+    .header {
+        padding: 5px 5px;
+        max-height: 50px;
+    }
+    
+    .logo img {
+        height: 18px;
+    }
+    
+    #menu-button {
+        padding: 5px;
+        font-size: 16px;
+    }
+    
+    .nav-links {
+        padding-right: 5px;
+    }
+    
+    .nav-links a {
+        font-size: 80%;
+        padding: 5px 2px;
+    }
+    
+    .expanded-menu.active {
+        width: 100%;
+    }
+    
+    .expanded-menu ul li {
+        font-size: 1rem;
+    }
+}
