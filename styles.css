@@ -313,7 +313,7 @@ body {
         display: flex;
         /* align-items: center; */
         justify-content: center; 
-        font-size: 80%;
+        font-size: 85%;
     }
     .nav-links {
         justify-content: left;
@@ -333,7 +333,7 @@ body {
     }
     .logo img {
         height: 22px; /* Make logo even smaller for mobile */
-        margin: 0; /* Reset negative margins for smaller logo */
+        margin-right: -15px; /* Reset negative margins for smaller logo */
     }
 
     #menu-button {
