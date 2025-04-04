@@ -383,29 +383,37 @@ body {
     }
 }
 
-
-/* Extra Small Mobile Devices (max-width: 400px) */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .header {
         padding: 5px 5px;
         max-height: 50px;
     }
     
+    .logo {
+        justify-content: left;
+        padding-left: -10%;
+        margin-right: 10%;
+    }
     .logo img {
         height: 18px;
+
     }
     
     #menu-button {
         padding: 5px;
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .nav-links {
-        padding-right: 5px;
+        justify-content: left;
+        padding-right: 5%;
+        padding-left: 10%;
+        margin-right: 25px;
+
     }
     
     .nav-links a {
-        font-size: 80%;
+        font-size: 85%;
         padding: 5px 2px;
     }
     
