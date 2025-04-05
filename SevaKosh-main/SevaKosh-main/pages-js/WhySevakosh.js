@@ -1,1 +1,0 @@
-// JavaScript specific to the Why SevaKosh page

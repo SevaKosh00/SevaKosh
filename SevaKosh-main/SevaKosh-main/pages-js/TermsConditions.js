@@ -1,1 +1,0 @@
-// JavaScript for Terms & Conditions page
