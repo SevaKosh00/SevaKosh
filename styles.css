@@ -99,7 +99,7 @@ body {
         left: 0;
         width: 30px;
         height: 100%;        
-        background-image: url("../public/logo-phone.jpg");
+        background-image: url('../public/logo-phone.jpg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
