@@ -414,3 +414,9 @@ body {
     }
 }
 
+@media (min-width: 400px) {
+    .nav-links {
+        padding-right: 5px;
+    }
+}
+
