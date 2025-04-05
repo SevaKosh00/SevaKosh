@@ -1,0 +1,6 @@
+/* CSS for Support & FAQ page */
+body {
+    margin: 0;
+    margin-top: 74px; /* Ensure the header does not overlap the content */
+    font-family: Arial, sans-serif;
+}
