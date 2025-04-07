@@ -21,13 +21,13 @@
 
 
 .quote-block {
-    width: 500px;
+    width: 400px;
     /* height: 500px; */
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     text-align: center;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth animation */
     transform: translateY(50px); /* Start off-screen */
@@ -36,13 +36,13 @@
 
 
 .quote-block h1 {
-    font-size: 100%;
+    font-size: 180%;
     margin-bottom: 10px;
 
 }
 
 .quote-block p {
-    font-size: 100%;
+    font-size: 130%;
     line-height: 1.6;
     color: #666;    
 }
