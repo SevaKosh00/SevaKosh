@@ -231,9 +231,9 @@ body {
     .logo img {
         padding-top: 15px;
         height: 18px;
-        width: 65px;
+        width: 80px;
         /* padding-left: -10px; */
-        margin-right: -30px;
+        margin-right: -35px;
     }
 
     /* .logo::after {
@@ -258,8 +258,13 @@ body {
 
     .nav-links {
         justify-content: right;
-        height: 20px;
+        height: 25px;
+        /* padding: 10px; */
         /* padding-right: -10px; */
+    }
+
+    .nav-links a{
+        padding: 6px;
     }
 
     #menu-button {
