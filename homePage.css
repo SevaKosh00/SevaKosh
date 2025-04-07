@@ -66,25 +66,32 @@
 .summaries-section {
     padding: 3rem 2rem;
     background-color: white;
+    text-align: center;
 }
 
 .summaries-section h2 {
-    text-align: center;
     color: var(--mission-text);
     margin-bottom: 2rem;
+
+}
+.summaries-section a {
+    text-decoration: none;
 }
 
 .summary-card {
     background: lavender;
-    
+    color: rgb(80, 80, 80);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin: 1rem;
     transition: all 0.3s ease;
-    text-align: center;
 }
-
+@media (max-width: 600px) {
+    .summary-card p{
+        text-align: left;
+    }
+}
 .summary-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
