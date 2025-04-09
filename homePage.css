@@ -11,13 +11,13 @@
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 60vh;
-    overflow: hidden;
+    /* height: 2%; */
+    /* overflow: hidden; */
 }
 
 .hero-image {
     width: 100%;
-    height: 180%;
+    height: 700px;
     /* object-fit: cover; */
     opacity: 1;
 }
@@ -30,7 +30,7 @@
     text-align: center;
     color: var(--hero-text-color);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -43,7 +43,7 @@
 
 .hero-text p {
     font-size: 1.5rem;
-    color: #ffd7c8;
+    color: #cccccc;
 }
 
 /* Mission Section */
@@ -170,7 +170,11 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero-section {
-        height: 50vh;
+        height: 80vh;
+    }
+
+    .hero-image {
+        height: 100%;
     }
 
     .hero-text h1 {
